@@ -1,34 +1,40 @@
 # HomeFinder PH
 
-**Live URL:** `https://homefinder-ph-<hash>-asia-southeast1.a.run.app`
+Property search demo for Metro Manila listings, built on Next.js 16 App Router. Portfolio project with seed data.
 
-A modern PropTech demo application for Metro Manila real estate — built as a portfolio piece for a Frontend Developer role at **Ohmyhome Property Inc.**
-
-## Why This Exists
-
-This project demonstrates end-to-end frontend engineering capability with a stack aligned to modern React/Next.js best practices. It showcases a full property discovery experience — from hero search to map-based browsing, seller dashboards, community ShoutOuts, and comparison tools — all powered by a clean data layer and deployed to Google Cloud Run.
-
-## Features
-
-- Property Search — debounced full-text search across 40 Metro Manila listings
-- Interactive Map — MapLibre GL JS with OpenStreetMap tiles, click-to-preview pins
-- Smart Filters — filter by city, type, status, price range, bedrooms, developer
-- Favorites — persisted to localStorage, accessible across sessions
-- Compare — side-by-side comparison of up to 3 properties
-- ShoutOuts — buyers post wish lists; community board with local + API data
-- Seller Dashboard — list a property, instant AI valuation, analytics charts
-- Price Trend Charts — 12-month price history per property (Recharts)
-- Demo Auth — session-based login via Zustand + localStorage persist
-- Responsive — mobile-first with bottom nav, filter sheets, swipeable gallery
-- Cloud Run — Docker standalone build, CI/CD via GitHub Actions
+**Live:** https://homefinder.kevinciang.com
 
 ## Screenshots
 
-| Page | Preview |
-|---|---|
-| Home / Hero | _(screenshot placeholder)_ |
-| Property Listing with Map | _(screenshot placeholder)_ |
-| Property Detail | _(screenshot placeholder)_ |
+![Home page with hero search and featured properties](docs/screenshots/home.png)
+Home page with the hero search and featured properties.
+
+![Listings page with the map tab open](docs/screenshots/listings-map.png)
+Listings page with the Map tab open, showing pins for all 40 seed properties.
+
+![Property detail page](docs/screenshots/property-detail.png)
+Property detail page with gallery and specs.
+
+## Features
+
+- Property search: debounced full-text search across 40 Metro Manila listings
+- Interactive map: MapLibre GL JS with OpenStreetMap tiles, click-to-preview pins
+- Filters: city, type, status, price range, bedrooms, developer
+- Favorites: stored in localStorage
+- Compare: side-by-side comparison of up to 3 properties
+- ShoutOuts: buyers post wish lists on a community board, using local and API data
+- Seller dashboard: list a property, instant valuation estimate, analytics charts
+- Price trend charts: 12-month price history per property (Recharts)
+- Demo auth: email-only login kept in a Zustand store persisted to localStorage
+- Responsive layout: bottom nav, filter sheets, swipeable gallery
+
+### Next.js specifics
+
+- App Router with route handlers under `src/app/api/` that serve the seed data in `src/data/`.
+- Server components: the home page (`/`) reads seed data on the server to pick the featured listings. The property detail page (`/properties/[id]`) is an async server component that awaits `params` and uses `generateStaticParams` to prerender all 40 listings at build time.
+- All other pages are statically prerendered at build time, and their interactive parts are client components that use TanStack Query and the route handlers for data. No page is rendered per request. Only the route handlers run on demand.
+- `output: "standalone"` in `next.config.ts` and a `Dockerfile` that serves on port 8080.
+- A GitHub Actions workflow that builds the image and deploys it to Cloud Run.
 
 ## Tech Stack
 
@@ -44,7 +50,7 @@ This project demonstrates end-to-end frontend engineering capability with a stac
 | Forms | react-hook-form + zod |
 | Testing | Vitest + @testing-library/react |
 | CI/CD | GitHub Actions |
-| Cloud | Google Cloud Run + Artifact Registry |
+| Container | Docker, Google Cloud Run + Artifact Registry |
 
 ## Run Locally
 
@@ -55,43 +61,7 @@ pnpm dev
 
 Open http://localhost:3000.
 
-## Deploy to Cloud Run
-
-### One-time GCP setup
-
-```bash
-export PROJECT_ID=your-gcp-project-id
-export REGION=asia-southeast1
-
-gcloud services enable run.googleapis.com artifactregistry.googleapis.com
-
-gcloud artifacts repositories create homefinder-ph \
-  --repository-format=docker \
-  --location=$REGION
-
-gcloud iam service-accounts create github-actions-sa \
-  --display-name="GitHub Actions SA"
-
-gcloud projects add-iam-policy-binding $PROJECT_ID \
-  --member="serviceAccount:github-actions-sa@${PROJECT_ID}.iam.gserviceaccount.com" \
-  --role="roles/run.admin"
-
-gcloud projects add-iam-policy-binding $PROJECT_ID \
-  --member="serviceAccount:github-actions-sa@${PROJECT_ID}.iam.gserviceaccount.com" \
-  --role="roles/artifactregistry.writer"
-
-gcloud projects add-iam-policy-binding $PROJECT_ID \
-  --member="serviceAccount:github-actions-sa@${PROJECT_ID}.iam.gserviceaccount.com" \
-  --role="roles/iam.serviceAccountUser"
-```
-
-### GitHub Secrets
-
-| Secret | Description |
-|---|---|
-| `GCP_PROJECT_ID` | Your GCP project ID |
-| `GCP_SERVICE_ACCOUNT` | Service account email |
-| `GCP_WORKLOAD_IDENTITY_PROVIDER` | Workload Identity Provider resource name |
+To regenerate the screenshots, run `pnpm build && pnpm start`, then `npx playwright install chromium` and `node scripts/screenshots.mjs`.
 
 ## Architecture
 
@@ -102,13 +72,31 @@ Browser
   └── MapLibre GL ──► OpenStreetMap Raster Tiles (no API key)
 ```
 
-## Known Limitations
+## Deploy
 
-- **Mock backend** — No real database. All property data is in `src/data/`. Submitted listings are not persisted server-side.
-- **No real authentication** — Login is email-only, no password, no JWT.
-- **Static pricing** — Valuation estimates use a deterministic formula, not real market data.
-- **No real images** — Uses Unsplash URLs.
+[`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) runs lint, typecheck, tests and build on every push to `main`. It then builds the Docker image, pushes it to Artifact Registry in `asia-southeast1`, and deploys it to Cloud Run as the `homefinder-ph` service. Authentication uses Workload Identity Federation.
+
+Required GitHub secrets:
+
+| Secret | Description |
+|---|---|
+| `GCP_PROJECT_ID` | GCP project ID |
+| `GCP_SERVICE_ACCOUNT` | Service account email |
+| `GCP_WORKLOAD_IDENTITY_PROVIDER` | Workload Identity Provider resource name |
+
+The live site at homefinder.kevinciang.com is currently served by Vercel, not Cloud Run.
+
+## What this demo does not do
+
+- **Mock backend:** No real database. All property data is in `src/data/`. Submitted listings are not persisted server-side.
+- **No real authentication:** Login is email-only, no password, no JWT.
+- **Static pricing:** Valuation estimates use a deterministic formula, not real market data.
+- **No real images:** Uses Unsplash URLs.
 
 ## License
 
 MIT
+
+## Origin
+
+Built as a portfolio piece for a Frontend Developer application at Ohmyhome Property Inc.

@@ -42,7 +42,7 @@ export default function SellerDashboardPage() {
             </div>
             <CardTitle className="mt-2">Instant Valuation</CardTitle>
             <CardDescription>
-              Get an AI-powered estimate of your property value in seconds.
+              Get an instant valuation estimate for your property.
             </CardDescription>
           </CardHeader>
           <CardContent className="pt-0">
