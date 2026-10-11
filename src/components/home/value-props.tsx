@@ -1,23 +1,21 @@
-import { ShieldCheck, Users, Megaphone } from "lucide-react";
+import { Search, Map, Megaphone } from "lucide-react";
 
 const FEATURES = [
   {
-    icon: ShieldCheck,
-    title: "Verified Listings",
+    icon: Search,
+    title: "Search and filters",
     description:
-      "Every property is reviewed for accuracy. No fake listings, no bait-and-switch. What you see is what you get.",
+      "Debounced search plus filters by city, property type, price and bedrooms.",
   },
   {
-    icon: Users,
-    title: "Trusted Agents",
-    description:
-      "Our network includes agents from the Philippines' top developers — Ayala Land, SMDC, Rockwell, and more.",
+    icon: Map,
+    title: "Map view",
+    description: "Every listing is pinned on an OpenStreetMap map, so you can browse by location.",
   },
   {
     icon: Megaphone,
-    title: "Free ShoutOuts",
-    description:
-      "Post your wish list for free. Let sellers come to you with matching properties that fit your exact criteria.",
+    title: "ShoutOuts",
+    description: "Buyers post a wish list on a community board for sellers to answer.",
   },
 ];
 
