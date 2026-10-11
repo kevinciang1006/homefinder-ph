@@ -81,7 +81,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Maria Santos",
       phone: "+63 917 123 4567",
-      email: "maria.santos@realty.ph",
+      email: "maria.santos@example.com",
       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80",
     },
   },
@@ -121,7 +121,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Jose Reyes",
       phone: "+63 918 234 5678",
-      email: "jose.reyes@ayala.ph",
+      email: "jose.reyes@example.com",
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80",
     },
   },
@@ -159,7 +159,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Ana Dela Cruz",
       phone: "+63 919 345 6789",
-      email: "ana.delacruz@smdc.ph",
+      email: "ana.delacruz@example.com",
       avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80",
     },
   },
@@ -191,7 +191,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Maria Santos",
       phone: "+63 917 123 4567",
-      email: "maria.santos@realty.ph",
+      email: "maria.santos@example.com",
       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80",
     },
   },
@@ -232,7 +232,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Paolo Cruz",
       phone: "+63 920 456 7890",
-      email: "paolo.cruz@megaworld.ph",
+      email: "paolo.cruz@example.com",
       avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80",
     },
   },
@@ -270,7 +270,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Lisa Tan",
       phone: "+63 921 567 8901",
-      email: "lisa.tan@federalland.ph",
+      email: "lisa.tan@example.com",
       avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80",
     },
   },
@@ -310,7 +310,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Jose Reyes",
       phone: "+63 918 234 5678",
-      email: "jose.reyes@ayala.ph",
+      email: "jose.reyes@example.com",
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80",
     },
   },
@@ -351,7 +351,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Carla Mendoza",
       phone: "+63 922 678 9012",
-      email: "carla.mendoza@rockwell.ph",
+      email: "carla.mendoza@example.com",
       avatar: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=80",
     },
   },
@@ -383,7 +383,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Marco Bautista",
       phone: "+63 923 789 0123",
-      email: "marco.bautista@robinsons.ph",
+      email: "marco.bautista@example.com",
       avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80",
     },
   },
@@ -415,7 +415,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Carla Mendoza",
       phone: "+63 922 678 9012",
-      email: "carla.mendoza@rockwell.ph",
+      email: "carla.mendoza@example.com",
       avatar: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=80",
     },
   },
@@ -455,7 +455,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Ana Dela Cruz",
       phone: "+63 919 345 6789",
-      email: "ana.delacruz@smdc.ph",
+      email: "ana.delacruz@example.com",
       avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80",
     },
   },
@@ -487,7 +487,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Marco Bautista",
       phone: "+63 923 789 0123",
-      email: "marco.bautista@robinsons.ph",
+      email: "marco.bautista@example.com",
       avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80",
     },
   },
@@ -521,7 +521,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Paolo Cruz",
       phone: "+63 920 456 7890",
-      email: "paolo.cruz@megaworld.ph",
+      email: "paolo.cruz@example.com",
       avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80",
     },
   },
@@ -560,7 +560,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Rosa Fernandez",
       phone: "+63 924 890 1234",
-      email: "rosa.fernandez@filinvest.ph",
+      email: "rosa.fernandez@example.com",
       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80",
     },
   },
@@ -592,7 +592,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Ana Dela Cruz",
       phone: "+63 919 345 6789",
-      email: "ana.delacruz@smdc.ph",
+      email: "ana.delacruz@example.com",
       avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80",
     },
   },
@@ -624,7 +624,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Marco Bautista",
       phone: "+63 923 789 0123",
-      email: "marco.bautista@robinsons.ph",
+      email: "marco.bautista@example.com",
       avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80",
     },
   },
@@ -665,7 +665,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Ana Dela Cruz",
       phone: "+63 919 345 6789",
-      email: "ana.delacruz@smdc.ph",
+      email: "ana.delacruz@example.com",
       avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80",
     },
   },
@@ -703,7 +703,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Lisa Tan",
       phone: "+63 921 567 8901",
-      email: "lisa.tan@federalland.ph",
+      email: "lisa.tan@example.com",
       avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80",
     },
   },
@@ -737,7 +737,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Rosa Fernandez",
       phone: "+63 924 890 1234",
-      email: "rosa.fernandez@filinvest.ph",
+      email: "rosa.fernandez@example.com",
       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80",
     },
   },
@@ -769,7 +769,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Marco Bautista",
       phone: "+63 923 789 0123",
-      email: "marco.bautista@robinsons.ph",
+      email: "marco.bautista@example.com",
       avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80",
     },
   },
@@ -801,7 +801,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Carlo Reyes",
       phone: "+63 925 901 2345",
-      email: "carlo.reyes@dmci.ph",
+      email: "carlo.reyes@example.com",
       avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80",
     },
   },
@@ -842,7 +842,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Maria Santos",
       phone: "+63 917 123 4567",
-      email: "maria.santos@realty.ph",
+      email: "maria.santos@example.com",
       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80",
     },
   },
@@ -880,7 +880,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Rosa Fernandez",
       phone: "+63 924 890 1234",
-      email: "rosa.fernandez@filinvest.ph",
+      email: "rosa.fernandez@example.com",
       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80",
     },
   },
@@ -918,7 +918,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Rosa Fernandez",
       phone: "+63 924 890 1234",
-      email: "rosa.fernandez@filinvest.ph",
+      email: "rosa.fernandez@example.com",
       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80",
     },
   },
@@ -950,7 +950,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Rosa Fernandez",
       phone: "+63 924 890 1234",
-      email: "rosa.fernandez@filinvest.ph",
+      email: "rosa.fernandez@example.com",
       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80",
     },
   },
@@ -992,7 +992,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Lisa Tan",
       phone: "+63 921 567 8901",
-      email: "lisa.tan@federalland.ph",
+      email: "lisa.tan@example.com",
       avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80",
     },
   },
@@ -1030,7 +1030,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Carlo Reyes",
       phone: "+63 925 901 2345",
-      email: "carlo.reyes@dmci.ph",
+      email: "carlo.reyes@example.com",
       avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80",
     },
   },
@@ -1068,7 +1068,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Carlo Reyes",
       phone: "+63 925 901 2345",
-      email: "carlo.reyes@dmci.ph",
+      email: "carlo.reyes@example.com",
       avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80",
     },
   },
@@ -1109,7 +1109,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Paolo Cruz",
       phone: "+63 920 456 7890",
-      email: "paolo.cruz@megaworld.ph",
+      email: "paolo.cruz@example.com",
       avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80",
     },
   },
@@ -1151,7 +1151,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Carla Mendoza",
       phone: "+63 922 678 9012",
-      email: "carla.mendoza@rockwell.ph",
+      email: "carla.mendoza@example.com",
       avatar: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=80",
     },
   },
@@ -1192,7 +1192,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Carlo Reyes",
       phone: "+63 925 901 2345",
-      email: "carlo.reyes@dmci.ph",
+      email: "carlo.reyes@example.com",
       avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80",
     },
   },
@@ -1231,7 +1231,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Lisa Tan",
       phone: "+63 921 567 8901",
-      email: "lisa.tan@federalland.ph",
+      email: "lisa.tan@example.com",
       avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80",
     },
   },
@@ -1263,7 +1263,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Marco Bautista",
       phone: "+63 923 789 0123",
-      email: "marco.bautista@robinsons.ph",
+      email: "marco.bautista@example.com",
       avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80",
     },
   },
@@ -1295,7 +1295,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Ana Dela Cruz",
       phone: "+63 919 345 6789",
-      email: "ana.delacruz@smdc.ph",
+      email: "ana.delacruz@example.com",
       avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80",
     },
   },
@@ -1327,7 +1327,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Carlo Reyes",
       phone: "+63 925 901 2345",
-      email: "carlo.reyes@dmci.ph",
+      email: "carlo.reyes@example.com",
       avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80",
     },
   },
@@ -1365,7 +1365,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Carlo Reyes",
       phone: "+63 925 901 2345",
-      email: "carlo.reyes@dmci.ph",
+      email: "carlo.reyes@example.com",
       avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80",
     },
   },
@@ -1404,7 +1404,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Lisa Tan",
       phone: "+63 921 567 8901",
-      email: "lisa.tan@federalland.ph",
+      email: "lisa.tan@example.com",
       avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80",
     },
   },
@@ -1444,7 +1444,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Jose Reyes",
       phone: "+63 918 234 5678",
-      email: "jose.reyes@ayala.ph",
+      email: "jose.reyes@example.com",
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80",
     },
   },
@@ -1483,7 +1483,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Maria Santos",
       phone: "+63 917 123 4567",
-      email: "maria.santos@realty.ph",
+      email: "maria.santos@example.com",
       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80",
     },
   },
@@ -1522,7 +1522,7 @@ export const PROPERTIES: Property[] = [
     agent: {
       name: "Rosa Fernandez",
       phone: "+63 924 890 1234",
-      email: "rosa.fernandez@filinvest.ph",
+      email: "rosa.fernandez@example.com",
       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80",
     },
   },
