@@ -52,8 +52,7 @@ export function Hero() {
           <span className="text-primary">Metro Manila</span>
         </h1>
         <p className="mb-8 text-lg text-white/80">
-          Browse 40+ verified listings across Makati, BGC, Pasig, and more. Real properties,
-          trusted developers, zero BS.
+          Browse 40 sample listings across Makati, BGC, Pasig and more. Portfolio demo with seed data.
         </p>
 
         {/* Search bar */}
@@ -101,7 +100,7 @@ export function Hero() {
         </div>
 
         <p className="mt-4 text-sm text-white/60">
-          40 properties · 9 cities · 10 trusted developers
+          40 sample listings · 9 cities · 10 developers
         </p>
       </div>
     </section>

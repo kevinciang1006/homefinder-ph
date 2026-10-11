@@ -42,8 +42,8 @@ export function ShoutOutCard({ shoutout }: ShoutOutCardProps) {
           </span>
           {shoutout.bedroomsMin > 0 && (
             <span className="flex items-center gap-1 text-muted-foreground">
-              <BedDouble className="h-4 w-4 text-primary" />
-              {shoutout.bedroomsMin}+ BR
+              <BedDouble className="h-4 w-4 text-primary" aria-hidden="true" />
+              {shoutout.bedroomsMin}+ BR<span className="sr-only"> (bedrooms)</span>
             </span>
           )}
         </div>

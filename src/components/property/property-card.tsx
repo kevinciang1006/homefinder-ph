@@ -64,24 +64,26 @@ export function PropertyCard({ property }: PropertyCardProps) {
             )}
           </p>
           <p className="mb-3 flex items-center gap-1 text-xs text-muted-foreground">
-            <MapPin className="h-3 w-3 shrink-0" />
+            <MapPin className="h-3 w-3 shrink-0" aria-hidden="true" />
             {property.city}
           </p>
           <div className="flex items-center gap-3 text-sm text-muted-foreground">
             {property.bedrooms > 0 && (
               <span className="flex items-center gap-1">
-                <BedDouble className="h-4 w-4" />
+                <BedDouble className="h-4 w-4" aria-hidden="true" />
                 {property.bedrooms}
+                <span className="sr-only">{property.bedrooms === 1 ? " bedroom" : " bedrooms"}</span>
               </span>
             )}
             {property.bathrooms > 0 && (
               <span className="flex items-center gap-1">
-                <Bath className="h-4 w-4" />
+                <Bath className="h-4 w-4" aria-hidden="true" />
                 {property.bathrooms}
+                <span className="sr-only">{property.bathrooms === 1 ? " bathroom" : " bathrooms"}</span>
               </span>
             )}
             <span className="flex items-center gap-1">
-              <Maximize2 className="h-4 w-4" />
+              <Maximize2 className="h-4 w-4" aria-hidden="true" />
               {formatArea(property.floorAreaSqm)}
             </span>
           </div>

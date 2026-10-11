@@ -10,7 +10,16 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "HomeFinder PH — Find Your Home in Metro Manila",
   description:
-    "Browse 40+ verified property listings across Makati, BGC, Pasig, and more. Buy, rent, or sell with HomeFinder PH.",
+    "Portfolio demo: property search for Metro Manila with filters, a map view and comparison. Seed data, not real listings.",
+  metadataBase: new URL("https://homefinder.kevinciang.com"),
+  openGraph: {
+    title: "HomeFinder PH — Find Your Home in Metro Manila",
+    description:
+      "Portfolio demo: property search for Metro Manila with filters, a map view and comparison. Seed data, not real listings.",
+    url: "https://homefinder.kevinciang.com",
+    siteName: "HomeFinder PH",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
